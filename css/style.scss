@@ -776,7 +776,7 @@ $breakpoint-phone3: 300px;
     }
 
     .list-title {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .menu {
@@ -790,6 +790,7 @@ $breakpoint-phone3: 300px;
     }
 
     footer.page-footer {
+        padding: 20px;
 
         .logo {
             a {
@@ -913,7 +914,7 @@ $breakpoint-phone3: 300px;
             align-items: baseline;
             margin: 15px 0px;
 
-            >*{
+            >* {
                 margin: 5px 0px;
             }
         }
