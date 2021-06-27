@@ -416,10 +416,6 @@ section {
         padding: 0px;
         text-align: right;
 
-        &.col-4 {
-            flex: 0 0 auto;
-            width: 31%;
-        }
 
         .card-thumbnail {
             border-bottom: 2px solid #0277bd;
@@ -858,6 +854,11 @@ $breakpoint-phone3: 300px;
         .container-fluid {
             padding: 0px !important;
         }
+
+        &.col-sm-6 {
+            flex: 0 0 auto;
+            width: 49% !important;
+        }
     }
 
 
@@ -907,10 +908,14 @@ $breakpoint-phone3: 300px;
 
         .menus {
             display: flex;
-            flex-flow: row;
+            flex-flow: column;
             justify-content: space-around;
             align-items: baseline;
             margin: 15px 0px;
+
+            >*{
+                margin: 5px 0px;
+            }
         }
 
         .tech {
@@ -954,6 +959,7 @@ $breakpoint-phone3: 300px;
     section {
         padding: 0px 17px;
     }
+
 }
 
 @media (max-width: $breakpoint-phone3) {
@@ -993,13 +999,46 @@ $breakpoint-phone3: 300px;
     .menu {
         ul {
             margin: 15px 0px;
-            li{
-                a{
+
+            li {
+                a {
                     font-size: 13px;
                 }
             }
         }
     }
 }
+
+
+
+
+// BOOTSTRAP EDIT START
+
+@media (min-width: 992px) {
+    .card.col-lg-4 {
+        flex: 0 0 auto;
+        width: 31%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card.col-md-4 {
+        flex: 0 0 auto;
+        width: 31%;
+    }
+}
+
+@media (max-width: 380px) {
+    .card.col-xs-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 99%;
+    }
+}
+
+// BOOTSTRAP EDIT END
+
+
 
 // media query END
